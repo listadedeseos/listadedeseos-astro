@@ -15,10 +15,20 @@ const { title } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Concert+One&family=Righteous&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body
-    class="bg-gradient-to-br from-indigo-500 to-sky-500 flex flex-col items-center min-h-screen"
+    class="baloo2 bg-gradient-to-br from-indigo-500 to-sky-500 flex flex-col items-center min-h-screen"
   >
     <slot />
   </body>
 </html>
+
+<style>
+  .baloo2 {
+    font-family: "Baloo 2", sans-serif;
+  }
+</style>
