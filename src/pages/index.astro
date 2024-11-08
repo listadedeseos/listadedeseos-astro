@@ -1,7 +1,82 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Lista de deseos">
-	texto de ejemplo
+  <main class="p-3 flex flex-col gap-3">
+    <h1 class="text-3xl">Lista de deseos ❤️✨</h1>
+
+    <p>
+      Imagina un lugar donde todos tus sueños y deseos se hagan realidad con
+      solo un clic. En <a class="text-blue-500" href="//listadedeseos.es"
+        >lista<span class="text-blue-300">de</span>deseos.es</a
+      > , transformamos tus aspiraciones en una lista organizada y accesible para
+      que nunca pierdas de vista tus objetivos.
+    </p>
+
+    <p>
+      <strong>🎁 Organiza tus Deseos:</strong> Crea y gestiona tus listas de deseos
+      de manera fácil y rápida. Desde metas personales y profesionales hasta los
+      artículos que siempre has querido tener, todo en un solo lugar.
+    </p>
+
+    <p>
+      <strong>💬 Comparte con Amigos y Familia:</strong> Comparte tus listas con
+      aquellos que más te importan y recibe sorpresas inesperadas. Ya sea para tu
+      cumpleaños, Navidad o cualquier ocasión especial, asegúrate de que siempre
+      sepan qué regalarte.
+    </p>
+
+    <section class="flex flex-col gap-3">
+      <article class="border rounded shadow flex gap-3 p-3">
+        <img
+          class="h-60 rounded"
+          src="/img/santaclaus.png"
+          alt="Imagen de papá noel leyendo una carta, es una imagen cálida"
+        />
+        <div>
+          <h2 class="font-bold">Regalos para papá noel</h2>
+          <p>Aquí podrás pedir tus regalos de papá noel</p>
+          <button class="bg-blue-500 text-white px-3 py-1 rounded"
+            >Pedir regalos</button
+          >
+        </div>
+      </article>
+
+      <article class="border rounded shadow flex gap-3 p-3">
+        <div>
+          <h2 class="font-bold">Regalos para el amigo invisible</h2>
+          <p>Aquí podrás pedir tus regalos para tus compañeros de trabajo</p>
+          <button class="bg-blue-500 text-white px-3 py-1 rounded"
+            >Pedir regalos</button
+          >
+        </div>
+        <img
+          class="ms-auto h-60 rounded"
+          src="/img/workmates.png"
+          alt="Imagen de compañeros de trabajo intercambiando regalos y sonriendo con ellos en la mano"
+        />
+      </article>
+
+      <article class="border rounded shadow flex gap-3 p-3">
+        <img
+          class="h-60 rounded"
+          src="/img/couple.png"
+          alt="Imagen de una pareja abrazándose y sonriendo, es una imagen cálida"
+        />
+        <div>
+          <h2 class="font-bold">Regalos para tu pareja</h2>
+          <p>Aquí podrás pedir tus regalos para tu pareja</p>
+          <button class="bg-blue-500 text-white px-3 py-1 rounded"
+            >Pedir regalos</button
+          >
+        </div>
+      </article>
+
+      <p>
+        <strong>🚀 ¡Empieza ahora!</strong> Crea tu cuenta y comienza a pedir tus
+        regalos de navidad, cumpleaños, aniversarios y mucho más. ¡No esperes más!
+      </p>
+    </section>
+  </main>
 </Layout>
