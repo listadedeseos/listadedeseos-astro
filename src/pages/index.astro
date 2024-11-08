@@ -3,10 +3,10 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Lista de deseos">
-  <main class="p-3 flex flex-col gap-3">
+  <main class="p-3 flex flex-col gap-3 max-w-5xl">
     <h1 class="text-3xl">Lista de deseos ❤️✨</h1>
 
-    <p>
+    <p class="bg-gray-200 p-3 rounded">
       Imagina un lugar donde todos tus sueños y deseos se hagan realidad con
       solo un clic. En <a class="text-blue-500" href="//listadedeseos.es"
         >lista<span class="text-blue-300">de</span>deseos.es</a
@@ -14,38 +14,40 @@ import Layout from "../layouts/Layout.astro";
       que nunca pierdas de vista tus objetivos.
     </p>
 
-    <p>
-      <strong>🎁 Organiza tus Deseos:</strong> Crea y gestiona tus listas de deseos
-      de manera fácil y rápida. Desde metas personales y profesionales hasta los
-      artículos que siempre has querido tener, todo en un solo lugar.
-    </p>
+    <section class="flex flex-col md:flex-row gap-3">
+      <p class="bg-gray-200 p-3 rounded">
+        <strong>🎁 Organiza tus Deseos:</strong> Crea y gestiona tus listas de deseos
+        de manera fácil y rápida. Desde metas personales y profesionales hasta los
+        artículos que siempre has querido tener, todo en un solo lugar.
+      </p>
 
-    <p>
-      <strong>💬 Comparte con Amigos y Familia:</strong> Comparte tus listas con
-      aquellos que más te importan y recibe sorpresas inesperadas. Ya sea para tu
-      cumpleaños, Navidad o cualquier ocasión especial, asegúrate de que siempre
-      sepan qué regalarte.
-    </p>
+      <p class="bg-gray-200 p-3 rounded">
+        <strong>💬 Comparte con Amigos y Familia:</strong> Comparte tus listas con
+        aquellos que más te importan y recibe sorpresas inesperadas. Ya sea para
+        tu cumpleaños, Navidad o cualquier ocasión especial, asegúrate de que siempre
+        sepan qué regalarte.
+      </p>
+    </section>
 
     <section class="flex flex-col gap-3">
-      <article class="border rounded shadow flex gap-3 p-3">
+      <article class="border-2 rounded shadow flex gap-3 p-3 bg-gray-200">
         <img
           class="h-60 rounded"
           src="/img/santaclaus.png"
           alt="Imagen de papá noel leyendo una carta, es una imagen cálida"
         />
         <div>
-          <h2 class="font-bold">Regalos para papá noel</h2>
-          <p>Aquí podrás pedir tus regalos de papá noel</p>
+          <h2 class="font-bold text-3xl">Regalos para papá nöel</h2>
+          <p>Aquí podrás pedir tus regalos de papá nöel</p>
           <button class="bg-blue-500 text-white px-3 py-1 rounded"
             >Pedir regalos</button
           >
         </div>
       </article>
 
-      <article class="border rounded shadow flex gap-3 p-3">
+      <article class="border-2 rounded shadow flex gap-3 p-3 bg-gray-200">
         <div>
-          <h2 class="font-bold">Regalos para el amigo invisible</h2>
+          <h2 class="font-bold text-3xl">Regalos para el amigo invisible</h2>
           <p>Aquí podrás pedir tus regalos para tus compañeros de trabajo</p>
           <button class="bg-blue-500 text-white px-3 py-1 rounded"
             >Pedir regalos</button
@@ -58,14 +60,14 @@ import Layout from "../layouts/Layout.astro";
         />
       </article>
 
-      <article class="border rounded shadow flex gap-3 p-3">
+      <article class="border-2 rounded shadow flex gap-3 p-3 bg-gray-200">
         <img
           class="h-60 rounded"
           src="/img/couple.png"
           alt="Imagen de una pareja abrazándose y sonriendo, es una imagen cálida"
         />
         <div>
-          <h2 class="font-bold">Regalos para tu pareja</h2>
+          <h2 class="font-bold text-3xl">Regalos para tu pareja</h2>
           <p>Aquí podrás pedir tus regalos para tu pareja</p>
           <button class="bg-blue-500 text-white px-3 py-1 rounded"
             >Pedir regalos</button
