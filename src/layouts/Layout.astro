@@ -1,4 +1,6 @@
 ---
+import Header from '../components/Header.astro';
+
 interface Props {
   title: string;
 }
@@ -21,8 +23,9 @@ const { title } = Astro.props;
     />
   </head>
   <body
-    class="baloo2 bg-gradient-to-br from-indigo-500 to-indigo-800 flex flex-col items-center min-h-screen"
+    class="baloo2 bg-custom_light_gray flex flex-col items-center min-h-screen"
   >
+  <Header/>
     <slot />
   </body>
 </html>
