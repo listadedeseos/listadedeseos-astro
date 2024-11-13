@@ -1,30 +1,51 @@
 ---
-import Logo from '../svg/Logo.astro';
+import Logo from "../svg/Logo.astro";
 interface Props {}
 const {} = Astro.props;
 ---
 
 <nav class="bg-custom_dark_gray border-gray-200 w-full">
-  <div class="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4">
+  <div
+    class="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4"
+  >
     <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
       <h1 class="text-3xl flex gap-3 text-custom_gold">
-        <Logo custom_class="h-9 w-min"></Logo>
-        <span class="hidden md:block"><strong>Lista</strong> de <strong>deseos</strong> .es</span>
+        <Logo custom_class="h-9 w-min" />
+        <span class="hidden md:block"
+          ><strong>Lista</strong> de <strong>deseos</strong> .es</span
+        >
       </h1>
     </a>
     <input hidden type="checkbox" id="expand-menu" class="peer" />
-    <label for="expand-menu" class="md:hidden text-3xl text-gray-50 peer-checked:hidden">☰</label>
-    <label for="expand-menu" class="md:hidden text-3xl text-gray-50 hidden peer-checked:block">⤫</label>
-    <div class="items-center justify-between hidden peer-checked:block w-full md:flex md:w-auto md:order-1 text-center">
-      <ul class="flex flex-col mt-4 font-medium md:flex-row md:mt-0 md:space-x-8">
+    <label
+      for="expand-menu"
+      class="md:hidden text-3xl text-gray-50 peer-checked:hidden">☰</label
+    >
+    <label
+      for="expand-menu"
+      class="md:hidden text-3xl text-gray-50 hidden peer-checked:block">⤫</label
+    >
+    <div
+      class="items-center justify-between hidden peer-checked:block w-full md:flex md:w-auto md:order-1 text-center"
+    >
+      <ul
+        class="flex flex-col mt-4 font-medium md:flex-row md:mt-0 md:space-x-8"
+      >
         <li>
-          <a href="/" class="block py-2 px-3 md:p-0 text-gray-50 hover:text-custom_gold" aria-current="page">Entrar</a>
+          <a
+            href="/"
+            class="block py-2 px-3 md:p-0 text-gray-50 hover:text-custom_gold"
+            aria-current="page">Entrar</a
+          >
         </li>
         <li>
-          <a href="/" class="block py-2 px-3 md:p-0 text-gray-50 hover:text-custom_gold" aria-current="page">Regístrate</a>
+          <a
+            href="/"
+            class="block py-2 px-3 md:p-0 text-gray-50 hover:text-custom_gold"
+            aria-current="page">Regístrate</a
+          >
         </li>
       </ul>
     </div>
   </div>
 </nav>
-
