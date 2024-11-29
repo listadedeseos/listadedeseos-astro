@@ -1,1 +1,5 @@
-ErrorDocument 404 /
+# Redirect to a custom error page if the page is not found
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f # If the file does not exist
+RewriteCond %{REQUEST_FILENAME} !-d # If the directory does not exist
+RewriteRule ^(.*)$ https://personal.listadedeseos.es/$1 [R=301,L] # 301 Moved Permanently (SEO friendly)
