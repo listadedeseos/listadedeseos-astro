@@ -3,81 +3,141 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Lista de deseos">
-  <main class="p-3 flex flex-col gap-3 max-w-5xl">
+  <main class="flex flex-col gap-3 max-w-5xl">
 
-    <p class="bg-gray-200 p-3 rounded">
-      Imagina un lugar donde todos tus sueños y deseos se hagan realidad con
-      solo un clic. En <a class="text-blue-500" href="//listadedeseos.es"
-        ><strong>lista</strong>de<strong>deseos</strong>.es</a
-      > , transformamos tus aspiraciones en una lista organizada y accesible para
-      que nunca pierdas de vista tus objetivos.
-    </p>
+    
 
-    <section class="flex flex-col md:flex-row gap-3">
-      <p class="bg-gray-200 p-3 rounded">
-        <strong>🎁 Organiza tus Deseos:</strong> Crea y gestiona tus listas de deseos
-        de manera fácil y rápida. Desde metas personales y profesionales hasta los
-        artículos que siempre has querido tener, todo en un solo lugar.
-      </p>
-
-      <p class="bg-gray-200 p-3 rounded">
-        <strong>💬 Comparte con Amigos y Familia:</strong> Comparte tus listas con
-        aquellos que más te importan y recibe sorpresas inesperadas. Ya sea para
-        tu cumpleaños, Navidad o cualquier ocasión especial, asegúrate de que siempre
-        sepan qué regalarte.
-      </p>
+    <section>
+      <div id="default-carousel" class="relative w-full" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+             <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/img/couple.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/img/santaclaus.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/img/workmates.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+        </div>
+        <!-- Slider indicators -->
+        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+        </div>
+        <!-- Slider controls -->
+        <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                </svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                </svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
+      </div>
     </section>
 
-    <section class="flex flex-col gap-3">
-      <article class="border-2 rounded shadow flex gap-3 p-3 bg-gray-200">
-        <img
-          class="h-60 rounded"
-          src="/img/santaclaus.png"
-          alt="Imagen de santa claus leyendo una carta, es una imagen cálida"
-        />
-        <div>
-          <h2 class="font-bold text-3xl">Regalos para papá nöel</h2>
-          <p>Aquí podrás pedir tus regalos de papá nöel</p>
-          <button class="bg-blue-500 text-white px-3 py-1 rounded"
-            >Pedir regalos</button
-          >
-        </div>
-      </article>
 
-      <article class="border-2 rounded shadow flex gap-3 p-3 bg-gray-200">
-        <div>
-          <h2 class="font-bold text-3xl">Regalos para el amigo invisible</h2>
-          <p>Aquí podrás pedir tus regalos para tus compañeros de trabajo</p>
-          <button class="bg-blue-500 text-white px-3 py-1 rounded"
-            >Pedir regalos</button
-          >
-        </div>
-        <img
-          class="ms-auto h-60 rounded"
-          src="/img/workmates.png"
-          alt="Imagen de compañeros de trabajo intercambiando regalos y sonriendo con ellos en la mano"
-        />
-      </article>
 
-      <article class="border-2 rounded shadow flex gap-3 p-3 bg-gray-200">
-        <img
-          class="h-60 rounded"
-          src="/img/couple.png"
-          alt="Imagen de una pareja abrazándose y sonriendo, es una imagen cálida"
-        />
-        <div>
-          <h2 class="font-bold text-3xl">Regalos para tu pareja</h2>
-          <p>Aquí podrás pedir tus regalos para tu pareja</p>
-          <button class="bg-blue-500 text-white px-3 py-1 rounded"
-            >Pedir regalos</button
-          >
-        </div>
-      </article>
+    <section class="w-full">
+      <div class="bg-gray-100 w-full py-12 px-6">
+        <div class="container mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="text-center">
+              <p>
+                <i class="fa-sharp fa-solid fa-gifts text-2xl text-yellow-500"
+                ></i>
+              </p>
+              <h2 class="text-xl font-semibold mt-2">1. Crea</h2>
+              <p class="text-gray-700 mt-2">
+                ¡Crear tu lista de deseos es fácil! Agrega artículos de cualquier tienda.
+              </p>
+            </div>
 
-      <p>
-        <strong>🚀 ¡Empieza ahora!</strong> Crea tu cuenta y comienza a pedir tus
-        regalos de navidad, cumpleaños, aniversarios y mucho más. ¡No esperes más!
-      </p>
+            <div class="text-center">
+              <p>
+                <i
+                  class="fa-sharp fa-solid fa-paper-plane text-2xl text-blue-500"
+                ></i>
+              </p>
+              <h2 class="text-xl font-semibold mt-2">2. Envía</h2>
+              <p class="text-gray-700 mt-2">
+                Envía tu lista de deseos a quien quieras. Por correo electrónico, chat o redes sociales.
+              </p>
+            </div>
+
+            <div class="text-center">
+              <p>
+                <i class="fa-sharp fa-solid fa-check text-2xl text-green-500"
+                ></i>
+              </p>
+              <h2 class="text-xl font-semibold mt-2">3. Reserva</h2>
+              <p class="text-gray-700 mt-2">
+                Tus familiares y amigos pueden reservar sus regalos en tu lista de deseos.
+              </p>
+            </div>
+          </div>
+
+          <p class="text-center mt-8">
+            <a
+              href="https://mywishlist.online/register"
+              class="bg-green-500 text-white py-2 px-6 rounded-lg text-lg hover:bg-green-600 transition duration-300"
+              title="Register">Empieza »</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="bg-white py-12 px-6">
+        <div class="container mx-auto">
+          <h2 class="text-2xl font-semibold text-center mb-4">
+            Soluciones sencillas para estas compañias
+          </h2>
+          <p class="text-gray-700 text-center mb-6">
+            Nosotros nos encargamos de añadir los articulos que ya tienes
+            añadidos en sus propias listas de deseos.
+          </p>
+          <div class="flex justify-center items-center gap-7">
+            <div>
+              <img
+                class="w-40 grayscale hover:grayscale-0 transition"
+                src="/svg/aliexpress_logo.svg"
+                alt="Amazon"
+              />
+            </div>
+            <div>
+              <img
+                class="w-28 pt-4 grayscale hover:grayscale-0 transition"
+                src="/svg/amazon_logo.svg"
+                alt="Amazon"
+              />
+            </div>
+            <div>
+              <img
+                class="w-36 grayscale hover:grayscale-0 transition"
+                src="/svg/steam_logo.svg"
+                alt="Steam"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 </Layout>
