@@ -16,7 +16,9 @@ export default defineConfig({
       lastmod: new Date(),
     }),
     icon({
-      include: [["fa", "@iconify-json/fa/icons.json"]],
+      include: {
+        fa: ["*"], // from @iconify-json/fa/icons.json
+      },
     }),
   ],
 });
