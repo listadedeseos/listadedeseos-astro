@@ -8,4 +8,4 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
 # 301 Moved Permanently (SEO friendly)
-RewriteRule ^(.*)$ https://app.listadedeseos.es/list/$1 [R=301,L]
+RewriteRule ^(.*)$ https://app.listadedeseos.es/list/user/$1 [R=301,L]
