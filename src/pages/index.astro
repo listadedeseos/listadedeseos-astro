@@ -6,56 +6,123 @@ import { Icon } from "astro-icon/components";
 
 <Layout title="Lista de deseos">
   <main class="flex flex-col gap-3">
-    <section class="bg-opacity-40">
-      <section class="flex flex-col md:flex-row max-w-5xl m-auto px-4 gap-6">
-        <section class="flex flex-col justify-center gap-4">
-          <h1 class="text-5xl font-bold">
-            Crea tu <strong>lista de deseos</strong> perfecta para tus ocasiones
-            más importantes
-          </h1>
+    <!---------------- First view section ---------------->
+    <section
+      class="flex flex-col md:flex-row max-w-5xl m-auto px-4 pt-4 md:pt-0 gap-6"
+    >
+      <section class="flex flex-col justify-center gap-4">
+        <h1 class="text-5xl font-bold">
+          Crea tu <strong>lista de deseos</strong> perfecta para tus ocasiones más
+          importantes
+        </h1>
 
-          <p>
-            Con nuestra herramienta, puedes crear listas de deseos
-            personalizadas para cualquier ocasión. Ya sea un cumpleaños, una
-            boda o cualquier otro evento especial, nuestra plataforma te permite
-            organizar tus deseos de manera sencilla y efectiva.
-          </p>
+        <p>
+          Con nuestra herramienta, puedes crear listas de deseos personalizadas
+          para cualquier ocasión. Ya sea un cumpleaños, una boda o cualquier
+          otro evento especial, nuestra plataforma te permite organizar tus
+          deseos de manera sencilla y efectiva.
+        </p>
 
-          <div class="flex gap-4 text-white font-bold">
-            <a
-              href="https://app.listadedeseos.es/register"
-              class="border-2 border-blue-600 bg-blue-500 px-3 py-2 rounded-lg hover:bg-blue-600 hover:border-blue-500 transition"
-            >
-              ¡Quiero mi lista de deseos!
-            </a>
-            <a
-              href="https://listadedeseos.es/admin/demo"
-              class="px-3 py-2 border-2 rounded-lg text-blue-500 border-blue-500 hover:bg-blue-400 hover:text-white hover:border-white transition"
-            >
-              <i class="fa-regular fa-face-laugh-wink"></i>
-              Ver lista de deseos de ejemplo
-            </a>
+        <div class="flex gap-4 text-white font-bold">
+          <a
+            href="https://app.listadedeseos.es/register"
+            class="border-2 border-blue-600 bg-blue-500 px-3 py-2 rounded-lg hover:bg-blue-600 hover:border-blue-500 transition"
+          >
+            ¡Quiero mi lista de deseos!
+          </a>
+          <a
+            href="https://listadedeseos.es/admin/demo"
+            class="px-3 py-2 border-2 rounded-lg text-blue-500 border-blue-500 hover:bg-blue-400 hover:text-white hover:border-white transition"
+          >
+            <i class="fa-regular fa-face-laugh-wink"></i>
+            Ver lista de deseos de ejemplo
+          </a>
+        </div>
+
+        <section>
+          <div class="flex gap-2 items-center text-md">
+            <Icon name="fa:check-circle" class="text-green-700" />
+            <p>Registro rápido con redes sociales</p>
           </div>
 
-          <section>
-            <div class="flex gap-2 items-center text-md">
-              <Icon name="fa:check-circle" class="text-green-700" />
-              <p>Registro rápido con redes sociales</p>
-            </div>
+          <div class="flex gap-2 items-center text-md">
+            <Icon name="fa:check-circle" class="text-green-700" />
 
-            <div class="flex gap-2 items-center text-md">
-              <Icon name="fa:check-circle" class="text-green-700" />
-
-              <p>Gratis, no tienes que pagar nada</p>
-            </div>
-          </section>
+            <p>Gratis, no tienes que pagar nada</p>
+          </div>
         </section>
+      </section>
 
-        <Phone
-          imageSrc="/img/demoWishlist.png"
-          imageAlt="Sencillo y fácil de usar"
-        />
+      <Phone
+        imageSrc="/img/demoWishlist.png"
+        imageAlt="Sencillo y fácil de usar"
+      />
+    </section>
+    <!---------------- First view section end ---------------->
+
+    <!---------------- Benefits section ---------------->
+    <section
+      class="bg-green-500 bg-opacity-20 text-green-900 p-4 border-y-2 border-green-500"
+    >
+      <section class="flex flex-col max-w-5xl m-auto px-4 gap-6">
+        <h1 class="text-4xl font-bold text-center">Beneficios</h1>
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <!---------------------------------->
+          <div
+            class="flex flex-col items-center gap-2 p-4 bg-white rounded-lg shadow-md"
+          >
+            <Icon name="fa:gift" class="text-green-500 text-5xl" />
+            <h2 class="text-xl font-bold">Regalos</h2>
+            <p class="text-center">
+              Recibe regalos que
+              <strong class="text-green-500"> realmente deseas </strong>
+              y evita sorpresas
+            </p>
+          </div>
+          <!---------------------------------->
+          <div
+            class="flex flex-col items-center gap-2 p-4 bg-white rounded-lg shadow-md"
+          >
+            <Icon name="fa:users" class="text-green-500 text-5xl" />
+            <h2 class="text-xl font-bold">Familia y amigos</h2>
+            <p class="text-center">
+              <strong class="text-green-500"> Comparte tu lista </strong>
+              con tus seres queridos para que sepan qué regalarte
+            </p>
+          </div>
+          <!---------------------------------->
+          <div
+            class="flex flex-col items-center gap-2 p-4 bg-white rounded-lg shadow-md"
+          >
+            <Icon name="fa:clock-o" class="text-green-500 text-5xl" />
+            <h2 class="text-xl font-bold">Ahorra tiempo</h2>
+            <div>
+              <p class="text-center">
+                Olvídate de buscar regalos de última hora
+              </p>
+              <p class="text-center">
+                ¡tenlo <strong class="text-green-500">todo organizado</strong>!
+              </p>
+            </div>
+          </div>
+          <!---------------------------------->
+          <div
+            class="flex flex-col items-center gap-2 p-4 bg-white rounded-lg shadow-md"
+          >
+            <Icon name="fa:heart" class="text-green-500 text-5xl" />
+            <h2 class="text-xl font-bold">Personaliza</h2>
+            <p class="text-center">
+              Personaliza tu lista con tus deseos y
+              <strong class="text-green-500">
+                sincroniza con Steam, Amazon y Aliexpress
+              </strong>
+              para tenerlo todo en un solo lugar
+            </p>
+          </div>
+          <!---------------------------------->
+        </section>
       </section>
     </section>
+    <!---------------- Benefits section end ---------------->
   </main>
 </Layout>
