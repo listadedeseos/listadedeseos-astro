@@ -1,0 +1,59 @@
+---
+import Logo from "../svg/Logo.astro";
+import { Icon } from "astro-icon/components";
+
+interface Props {}
+const {} = Astro.props;
+
+const year = new Date().getFullYear();
+---
+
+<footer
+  class="w-full bg-gray-950 border-t border-gray-800 p-5 grid grid-cols-1 gap-5 text-center text-gray-300 text-sm"
+>
+  <section class="grid grid-cols-1 md:grid-cols-2 gap-5">
+    <a
+      href="https://github.com/listadedeseos/listadedeseos-astro"
+      class="hover:text-white flex gap-2 justify-center items-center"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="Aporta código a nuestra comunidad"
+    >
+      <Icon name="fa:github" />
+      Edita esta página en Github
+    </a>
+
+    <a
+      href="https://app.listadedeseos.es/contact"
+      class="hover:text-white flex gap-2 justify-center items-center"
+      title="Contáctanos"
+    >
+      <Icon name="fa:envelope" />
+      Haz una sugerencia
+    </a>
+  </section>
+
+  <section class="flex justify-center gap-2 items-center">
+    Lista de deseos
+    <Icon name="fa:copyright" />
+    {year}
+  </section>
+
+  <section class="flex justify-center">
+    <a
+      href="https://jose-web.github.io"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="flex items-center opacity-50 hover:opacity-100 transition"
+    >
+      <p>Desarrollado por</p>
+      <img
+        class="invert h-16"
+        src="https://jose-web.github.io/logo.svg"
+        alt="Logo desarrollador"
+      />
+      <p>con mucho</p>
+      <Icon name="fa:heart" class="ml-2" />
+    </a>
+  </section>
+</footer>
