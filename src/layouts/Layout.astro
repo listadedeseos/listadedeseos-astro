@@ -16,7 +16,10 @@ const { title } = Astro.props;
     <GoogleAnalytics />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
+    <meta
+      name="description"
+      content="Crea y comparte tu lista de deseos perfecta para cualquier ocasión especial. Organiza tus regalos de manera sencilla y comparte con tus amigos y familiares."
+    />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/svg/logo.svg" />
     <link
@@ -29,6 +32,13 @@ const { title } = Astro.props;
       href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Concert+One&family=Righteous&family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://listadedeseos.es" />
+    <meta property="og:image" content="/svg/logo.svg" />
+    <meta property="og:locale" content="es_ES" />
+    <!-- Open Graph Meta Tags End -->
   </head>
   <body class="baloo2 bg-zinc-200 flex flex-col items-center min-h-screen">
     <Header />
