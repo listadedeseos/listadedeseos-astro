@@ -61,68 +61,117 @@ import { Icon } from "astro-icon/components";
     <!---------------- First view section end ---------------->
 
     <!---------------- Benefits section ---------------->
-    <section
-      class="bg-green-500 bg-opacity-20 text-green-900 p-4 border-y-2 border-green-500"
-    >
-      <section class="flex flex-col max-w-5xl m-auto gap-4">
-        <h1 class="text-4xl font-bold text-center">Beneficios</h1>
-        <section class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <!---------------------------------->
-          <div
-            class="flex flex-col items-center gap-2 p-4 bg-gray-100 rounded-lg shadow-md"
-          >
-            <Icon name="fa:gift" class="text-green-500 text-5xl" />
-            <h2 class="text-xl font-bold">Regalos</h2>
-            <p class="text-center">
-              Recibe regalos que
-              <strong class="text-green-500"> realmente deseas </strong>
-              y evita sorpresas
-            </p>
-          </div>
-          <!---------------------------------->
-          <div
-            class="flex flex-col items-center gap-2 p-4 bg-gray-100 rounded-lg shadow-md"
-          >
-            <Icon name="fa:users" class="text-green-500 text-5xl" />
-            <h2 class="text-xl font-bold">Familia y amigos</h2>
-            <p class="text-center">
-              <strong class="text-green-500"> Comparte tu lista </strong>
-              con tus seres queridos para que sepan qué regalarte
-            </p>
-          </div>
-          <!---------------------------------->
-          <div
-            class="flex flex-col items-center gap-2 p-4 bg-gray-100 rounded-lg shadow-md"
-          >
-            <Icon name="fa:clock-o" class="text-green-500 text-5xl" />
-            <h2 class="text-xl font-bold">Ahorra tiempo</h2>
-            <div>
+    <section>
+      <svg
+        class="w-screen h-20 md:h-36"
+        xmlns="http://www.w3.org/2000/svg"
+        version="1.1"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        preserveAspectRatio="none"
+        viewBox="0 0 1024 200"
+      >
+        <g mask='url("#SvgjsMask1249")' fill="none">
+          <path
+            class="fill-blue-300"
+            d="M 0,35 C 68.4,43 205.2,72.6 342,75 C 478.8,77.4 547.6,49.4 684,47 C 820.4,44.6 956,59.8 1024,63L1024 200L0 200z"
+          ></path>
+          <path
+            class="fill-blue-500"
+            d="M 0,168 C 68.4,155 205.2,98.4 342,103 C 478.8,107.6 547.6,186.6 684,191 C 820.4,195.4 956,138.2 1024,125L1024 200L0 200z"
+          ></path>
+        </g>
+        <defs>
+          <mask id="SvgjsMask1249">
+            <rect width="1024" height="200" fill="#ffffff"></rect>
+          </mask>
+        </defs>
+      </svg>
+      <section class="bg-blue-500 text-white p-4">
+        <section class="flex flex-col max-w-5xl m-auto gap-4">
+          <h1 class="text-4xl font-bold text-center">Beneficios</h1>
+          <section class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!---------------------------------->
+            <div
+              class="flex flex-col items-center gap-2 p-4 bg-blue-400 rounded-lg shadow-md"
+            >
+              <Icon name="fa:gift" class="text-white text-5xl" />
+              <h2 class="text-xl font-bold">Regalos</h2>
               <p class="text-center">
-                Olvídate de buscar regalos de última hora
-              </p>
-              <p class="text-center">
-                ¡tenlo <strong class="text-green-500">todo organizado</strong>!
+                Recibe regalos que
+                <strong class="text-white"> realmente deseas </strong>
+                y evita sorpresas
               </p>
             </div>
-          </div>
-          <!---------------------------------->
-          <div
-            class="flex flex-col items-center gap-2 p-4 bg-gray-100 rounded-lg shadow-md"
-          >
-            <Icon name="fa:heart" class="text-green-500 text-5xl" />
-            <h2 class="text-xl font-bold">Personaliza</h2>
-            <p class="text-center">
-              Personaliza tu lista con tus deseos y
-              <strong class="text-green-500">
-                sincroniza con Steam, Amazon y Aliexpress
-              </strong>
-              para tenerlo todo en un solo lugar
-            </p>
-          </div>
-          <!---------------------------------->
+            <!---------------------------------->
+            <div
+              class="flex flex-col items-center gap-2 p-4 bg-blue-400 rounded-lg shadow-md"
+            >
+              <Icon name="fa:users" class="text-white text-5xl" />
+              <h2 class="text-xl font-bold">Familia y amigos</h2>
+              <p class="text-center">
+                <strong class="text-white"> Comparte tu lista </strong>
+                con tus seres queridos para que sepan qué regalarte
+              </p>
+            </div>
+            <!---------------------------------->
+            <div
+              class="flex flex-col items-center gap-2 p-4 bg-blue-400 rounded-lg shadow-md"
+            >
+              <Icon name="fa:clock-o" class="text-white text-5xl" />
+              <h2 class="text-xl font-bold">Ahorra tiempo</h2>
+              <div>
+                <p class="text-center">
+                  Olvídate de buscar regalos de última hora
+                </p>
+                <p class="text-center">
+                  ¡tenlo <strong class="text-white">todo organizado</strong>!
+                </p>
+              </div>
+            </div>
+            <!---------------------------------->
+            <div
+              class="flex flex-col items-center gap-2 p-4 bg-blue-400 rounded-lg shadow-md"
+            >
+              <Icon name="fa:heart" class="text-white text-5xl" />
+              <h2 class="text-xl font-bold">Personaliza</h2>
+              <p class="text-center">
+                Personaliza tu lista con tus deseos y
+                <strong class="text-white">
+                  sincroniza con Steam, Amazon y Aliexpress
+                </strong>
+                para tenerlo todo en un solo lugar
+              </p>
+            </div>
+            <!---------------------------------->
+          </section>
         </section>
       </section>
+      <svg
+        class="rotate-180 w-screen h-20 md:h-36"
+        xmlns="http://www.w3.org/2000/svg"
+        version="1.1"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        preserveAspectRatio="none"
+        viewBox="0 0 1024 200"
+      >
+        <g mask='url("#SvgjsMask1257")' fill="none">
+          <path
+            class="fill-blue-300"
+            d="M 0,18 C 68.4,32 205.2,84.6 342,88 C 478.8,91.4 547.6,41.6 684,35 C 820.4,28.4 956,51 1024,55L1024 200L0 200z"
+          ></path>
+          <path
+            class="fill-blue-500"
+            d="M 0,143 C 68.4,146.8 205.2,167.6 342,162 C 478.8,156.4 547.6,109 684,115 C 820.4,121 956,176.6 1024,192L1024 200L0 200z"
+          ></path>
+        </g>
+        <defs>
+          <mask id="SvgjsMask1257">
+            <rect width="1024" height="200" fill="#ffffff"></rect>
+          </mask>
+        </defs>
+      </svg>
     </section>
+
     <!---------------- Benefits section end ---------------->
 
     <!---------------- How works section ---------------->
