@@ -63,7 +63,7 @@ import { Icon } from "astro-icon/components";
     <!---------------- Benefits section ---------------->
     <section>
       <svg
-        class="w-screen h-20 md:h-36"
+        class="w-full h-20 md:h-36"
         xmlns="http://www.w3.org/2000/svg"
         version="1.1"
         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -92,7 +92,7 @@ import { Icon } from "astro-icon/components";
           <section class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <!---------------------------------->
             <div
-              class="flex flex-col items-center gap-2 p-4 bg-blue-400 rounded-lg shadow-md"
+              class="animation-scale flex flex-col items-center gap-2 p-4 bg-blue-400 rounded-lg shadow-md"
             >
               <Icon name="fa:gift" class="text-white text-5xl" />
               <h2 class="text-xl font-bold">Regalos</h2>
@@ -104,7 +104,7 @@ import { Icon } from "astro-icon/components";
             </div>
             <!---------------------------------->
             <div
-              class="flex flex-col items-center gap-2 p-4 bg-blue-400 rounded-lg shadow-md"
+              class="animation-scale flex flex-col items-center gap-2 p-4 bg-blue-400 rounded-lg shadow-md"
             >
               <Icon name="fa:users" class="text-white text-5xl" />
               <h2 class="text-xl font-bold">Familia y amigos</h2>
@@ -115,7 +115,7 @@ import { Icon } from "astro-icon/components";
             </div>
             <!---------------------------------->
             <div
-              class="flex flex-col items-center gap-2 p-4 bg-blue-400 rounded-lg shadow-md"
+              class="animation-scale flex flex-col items-center gap-2 p-4 bg-blue-400 rounded-lg shadow-md"
             >
               <Icon name="fa:clock-o" class="text-white text-5xl" />
               <h2 class="text-xl font-bold">Ahorra tiempo</h2>
@@ -130,7 +130,7 @@ import { Icon } from "astro-icon/components";
             </div>
             <!---------------------------------->
             <div
-              class="flex flex-col items-center gap-2 p-4 bg-blue-400 rounded-lg shadow-md"
+              class="animation-scale flex flex-col items-center gap-2 p-4 bg-blue-400 rounded-lg shadow-md"
             >
               <Icon name="fa:heart" class="text-white text-5xl" />
               <h2 class="text-xl font-bold">Personaliza</h2>
@@ -147,7 +147,7 @@ import { Icon } from "astro-icon/components";
         </section>
       </section>
       <svg
-        class="rotate-180 w-screen h-20 md:h-36"
+        class="rotate-180 w-full h-20 md:h-36"
         xmlns="http://www.w3.org/2000/svg"
         version="1.1"
         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -180,7 +180,7 @@ import { Icon } from "astro-icon/components";
         <h1 class="text-4xl font-bold text-center">¿Cómo funciona?</h1>
         <section class="grid grid-cols-1 md:grid-cols-3 gap-9 py-10">
           <!---------------------------------->
-          <div class="flex flex-col gap-2 border-l-4 rounded-lg">
+          <div class="animation-scale flex flex-col gap-2 border-l-4 rounded-lg">
             <h2 class="flex font-bold items-center gap-2">
               <Icon name="fa:user" class="text-blue-600" />
               <span class="text-xl">Regístrate</span>
@@ -191,7 +191,7 @@ import { Icon } from "astro-icon/components";
             </p>
           </div>
           <!---------------------------------->
-          <div class="flex flex-col gap-2 border-l-4 rounded-lg">
+          <div class="animation-scale flex flex-col gap-2 border-l-4 rounded-lg">
             <h2 class="flex font-bold items-center gap-2">
               <Icon name="fa:pencil" class="text-blue-600" />
               <span class="text-xl">Crea tu lista</span>
@@ -202,7 +202,7 @@ import { Icon } from "astro-icon/components";
             </p>
           </div>
           <!---------------------------------->
-          <div class="flex flex-col gap-2 border-l-4 rounded-lg">
+          <div class="animation-scale flex flex-col gap-2 border-l-4 rounded-lg">
             <h2 class="flex font-bold items-center gap-2">
               <Icon name="fa:share-alt" class="text-blue-600" />
               <span class="text-xl">Comparte</span>
@@ -219,3 +219,26 @@ import { Icon } from "astro-icon/components";
     <!---------------- How works section end ---------------->
   </main>
 </Layout>
+
+<style>
+  .animation-scale {
+    view-timeline: --subjectReveal block;
+    animation-timeline: --subjectReveal;
+
+    animation-name: appear;
+    animation-range: entry 10% contain 25%;
+    animation-fill-mode: both;
+    animation-duration: 1ms; /* Firefox requires this to apply the animation */
+  }
+
+  @keyframes appear {
+    0% {
+      transform: scale(0.8);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+</style>
