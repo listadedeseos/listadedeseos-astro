@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://listadedeseos.es/sitemap-index.xml
