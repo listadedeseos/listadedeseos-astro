@@ -3,7 +3,7 @@ name: Deployment Pipeline
 on:
   push:
     branches:
-      - main
+      - deploy-to-server
 
 jobs:
   upload_files:
