@@ -9,7 +9,8 @@ import icon from 'astro-icon';
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://listadedeseos.es",
+  site: "https://listadedeseos.github.io",
+  base: "/listadedeseos-astro",
   integrations: [
     tailwind(),
     sitemap({
